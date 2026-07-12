@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Knowledge Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="how-http-works.html">How HTTP Works</a></li>
+            <li><a href="key-concepts.html">Key Concepts</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>HTTP Knowledge Quiz</h1>
+        <p>
+            Test your understanding of HTTP after reading the information on this website.
+            Complete all five questions and click Submit Quiz to see your results.
+        </p>
+    </header>
+
+    <main class="container">
+
+        <form id="quizForm">
+
+            <!-- Question 1 -->
+            <div class="card">
+                <h2>Question 1 (Fill in the Blank)</h2>
+
+                <label>
+                    HTTP stands for:
+                </label>
+
+                <br><br>
+
+                <input type="text" id="q1" placeholder="Type your answer here">
+            </div>
+
+            <!-- Question 2 -->
+
+            <div class="card">
+
+                <h2>Question 2</h2>
+
+                <p>Which HTTP method is used to retrieve information from a server?</p>
+
+                <label>
+                    <input type="radio" name="q2" value="GET">
+                    GET
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="radio" name="q2" value="POST">
+                    POST
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="radio" name="q2" value="PUT">
+                    PUT
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="radio" name="q2" value="DELETE">
+                    DELETE
+                </label>
+
+            </div>
+
+            <!-- Question 3 -->
+
+            <div class="card">
+
+                <h2>Question 3</h2>
+
+                <p>Which protocol provides encrypted communication?</p>
+
+                <label><input type="radio" name="q3" value="HTTP">HTTP</label><br>
+
+                <label><input type="radio" name="q3" value="HTTPS">HTTPS</label><br>
+
+                <label><input type="radio" name="q3" value="FTP">FTP</label><br>
+
+                <label><input type="radio" name="q3" value="SMTP">SMTP</label>
+
+            </div>
+
+            <!-- Question 4 -->
+
+            <div class="card">
+
+                <h2>Question 4</h2>
+
+                <p>Which HTTP status code means "Page Not Found"?</p>
+
+                <label><input type="radio" name="q4" value="200">200</label><br>
+
+                <label><input type="radio" name="q4" value="301">301</label><br>
+
+                <label><input type="radio" name="q4" value="404">404</label><br>
+
+                <label><input type="radio" name="q4" value="500">500</label>
+
+            </div>
+
+            <!-- Question 5 -->
+
+            <div class="card">
+
+                <h2>Question 5 (Select all that apply)</h2>
+
+                <p>Select every HTTP request method.</p>
+
+                <label><input type="checkbox" id="get">GET</label><br>
+
+                <label><input type="checkbox" id="post">POST</label><br>
+
+                <label><input type="checkbox" id="jpeg">JPEG</label><br>
+
+                <label><input type="checkbox" id="put">PUT</label><br>
+
+                <label><input type="checkbox" id="css">CSS</label>
+
+            </div>
+
+            <div class="card">
+
+                <button type="button" id="submitBtn">
+                    Submit Quiz
+                </button>
+
+                <button type="reset" id="resetBtn">
+                    Reset Quiz
+                </button>
+
+            </div>
+
+        </form>
+
+        <div class="card">
+
+            <h2>Quiz Results</h2>
+
+            <div id="results">
+
+                Your results will appear here after you submit the quiz.
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
